@@ -1,5 +1,7 @@
 # php-html-tags
 
+[![github action status](https://github.com/hexlet-components/php-html-tags/workflows/master/badge.svg)](https://github.com/hexlet-components/php-html-tags/actions)
+
 Functions for working with HTML tags.
 
 ## Examples
@@ -13,6 +15,8 @@ use function PhpHtmlTags\HtmlTags\node;
 use function PhpHtmlTags\HtmlTags\toString;
 use function PhpHtmlTags\HtmlTags\addChild;
 use function PhpHtmlTags\HtmlTags\hasChildren;
+use function PhpHtmlTags\HtmlTags\getName;
+use function PhpHtmlTags\HtmlTags\getValue;
 
 $p = node('p', 'paragraph');
 $ul = node('ul');
