@@ -9,14 +9,14 @@ Functions for working with HTML tags.
 ```php
 <?php
 
-use function PhpHtmlTags\HtmlTags\make;
-use function PhpHtmlTags\HtmlTags\append;
-use function PhpHtmlTags\HtmlTags\node;
-use function PhpHtmlTags\HtmlTags\toString;
-use function PhpHtmlTags\HtmlTags\addChild;
-use function PhpHtmlTags\HtmlTags\hasChildren;
-use function PhpHtmlTags\HtmlTags\getName;
-use function PhpHtmlTags\HtmlTags\getValue;
+use function Php\Html\Tags\HtmlTags\make;
+use function Php\Html\Tags\HtmlTags\append;
+use function Php\Html\Tags\HtmlTags\node;
+use function Php\Html\Tags\HtmlTags\toString;
+use function Php\Html\Tags\HtmlTags\addChild;
+use function Php\Html\Tags\HtmlTags\hasChildren;
+use function Php\Html\Tags\HtmlTags\getName;
+use function Php\Html\Tags\HtmlTags\getValue;
 
 $p = node('p', 'paragraph');
 $ul = node('ul');

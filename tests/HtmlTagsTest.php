@@ -1,19 +1,19 @@
 <?php
 
-namespace PhpHtmlTags\tests;
+namespace Php\Html\Tags\tests;
 
 use PHPUnit\Framework\TestCase;
 
-use function PhpHtmlTags\HtmlTags\make;
-use function PhpHtmlTags\HtmlTags\append;
-use function PhpHtmlTags\HtmlTags\node;
-use function PhpHtmlTags\HtmlTags\toString;
-use function PhpHtmlTags\HtmlTags\addChild;
-use function PhpHtmlTags\HtmlTags\is;
-use function PhpHtmlTags\HtmlTags\getValue;
-use function PhpHtmlTags\HtmlTags\map;
-use function PhpHtmlTags\HtmlTags\filter;
-use function PhpHtmlTags\HtmlTags\reduce;
+use function Php\Html\Tags\HtmlTags\make;
+use function Php\Html\Tags\HtmlTags\append;
+use function Php\Html\Tags\HtmlTags\node;
+use function Php\Html\Tags\HtmlTags\toString;
+use function Php\Html\Tags\HtmlTags\addChild;
+use function Php\Html\Tags\HtmlTags\is;
+use function Php\Html\Tags\HtmlTags\getValue;
+use function Php\Html\Tags\HtmlTags\map;
+use function Php\Html\Tags\HtmlTags\filter;
+use function Php\Html\Tags\HtmlTags\reduce;
 
 class HtmlTagsTest extends TestCase
 {

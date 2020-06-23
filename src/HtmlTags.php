@@ -1,20 +1,20 @@
 <?php
 
-namespace PhpHtmlTags\HtmlTags;
+namespace Php\Html\Tags\HtmlTags;
 
-use function PhpPairs\Pairs\cons;
-use function PhpPairs\Pairs\car;
-use function PhpPairs\Pairs\cdr;
-use function PhpPairs\Pairs\isPair;
-use function PhpPairsData\Lists\reverse;
-use function PhpPairsData\Lists\l;
-use function PhpPairsData\Lists\cons as consLists;
-use function PhpPairsData\Lists\isEmpty;
-use function PhpPairsData\Lists\head;
-use function PhpPairsData\Lists\tail;
-use function PhpPairsData\Lists\map as mapLists;
-use function PhpPairsData\Lists\filter as filterLists;
-use function PhpPairsData\Lists\reduce as reduceLists;
+use function Php\Pairs\Pairs\cons;
+use function Php\Pairs\Pairs\car;
+use function Php\Pairs\Pairs\cdr;
+use function Php\Pairs\Pairs\isPair;
+use function Php\Pairs\Data\Lists\reverse;
+use function Php\Pairs\Data\Lists\l;
+use function Php\Pairs\Data\Lists\cons as consLists;
+use function Php\Pairs\Data\Lists\isEmpty;
+use function Php\Pairs\Data\Lists\head;
+use function Php\Pairs\Data\Lists\tail;
+use function Php\Pairs\Data\Lists\map as mapLists;
+use function Php\Pairs\Data\Lists\filter as filterLists;
+use function Php\Pairs\Data\Lists\reduce as reduceLists;
 
 /**
  * Make a list of nodes
