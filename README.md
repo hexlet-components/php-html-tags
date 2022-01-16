@@ -1,6 +1,6 @@
 # php-html-tags
 
-[![github action status](https://github.com/hexlet-components/php-html-tags/workflows/master/badge.svg)](https://github.com/hexlet-components/php-html-tags/actions)
+[![github action status](https://github.com/hexlet-components/php-html-tags/workflows/PHP%20CI/badge.svg)](../../actions)
 
 Functions for working with HTML tags.
 
