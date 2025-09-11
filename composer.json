@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": ">=8.1",
+        "php": ">=8.3",
         "hexlet/pairs": "dev-main",
         "hexlet/pairs-data": "dev-main"
     },
