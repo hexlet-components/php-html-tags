@@ -9,7 +9,6 @@ use function Php\Pairs\Pairs\isPair;
 use function Php\Pairs\Data\Lists\reverse;
 use function Php\Pairs\Data\Lists\l;
 use function Php\Pairs\Data\Lists\cons as consLists;
-use function Php\Pairs\Data\Lists\isEmpty;
 use function Php\Pairs\Data\Lists\head;
 use function Php\Pairs\Data\Lists\tail;
 use function Php\Pairs\Data\Lists\map as mapLists;

@@ -2,6 +2,7 @@
 
 namespace Php\Html\Tags\tests;
 
+use Closure;
 use PHPUnit\Framework\TestCase;
 
 use function Php\Html\Tags\HtmlTags\make;
@@ -17,6 +18,8 @@ use function Php\Html\Tags\HtmlTags\reduce;
 
 class HtmlTagsTest extends TestCase
 {
+    private ?Closure $dom;
+
     protected function setUp(): void
     {
         $dom1 = make();
