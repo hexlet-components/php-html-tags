@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/hexlet-components/php-html-tags/compare/v2.0.0...v2.0.1) (2026-08-18)
+
+
+### Bug Fixes
+
+* **deps:** требовать hexlet/pairs и hexlet/pairs-data мажора 2 ([#7](https://github.com/hexlet-components/php-html-tags/issues/7)) ([e10e020](https://github.com/hexlet-components/php-html-tags/commit/e10e0203a37bdee12ffcc67ad8d24993a0cfb0dc))
+
 ## [2.0.0](https://github.com/hexlet-components/php-html-tags/compare/v1.1.0...v2.0.0) (2026-08-18)
 
 
