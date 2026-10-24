@@ -1,19 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Php\Html\Tags\HtmlTags;
 
-use function Php\Pairs\Pairs\cons;
+use function Php\Pairs\Data\Lists\cons as consLists;
+use function Php\Pairs\Data\Lists\filter as filterLists;
+use function Php\Pairs\Data\Lists\head;
+use function Php\Pairs\Data\Lists\l;
+use function Php\Pairs\Data\Lists\map as mapLists;
+use function Php\Pairs\Data\Lists\reduce as reduceLists;
+use function Php\Pairs\Data\Lists\reverse;
+use function Php\Pairs\Data\Lists\tail;
 use function Php\Pairs\Pairs\car;
 use function Php\Pairs\Pairs\cdr;
+use function Php\Pairs\Pairs\cons;
 use function Php\Pairs\Pairs\isPair;
-use function Php\Pairs\Data\Lists\reverse;
-use function Php\Pairs\Data\Lists\l;
-use function Php\Pairs\Data\Lists\cons as consLists;
-use function Php\Pairs\Data\Lists\head;
-use function Php\Pairs\Data\Lists\tail;
-use function Php\Pairs\Data\Lists\map as mapLists;
-use function Php\Pairs\Data\Lists\filter as filterLists;
-use function Php\Pairs\Data\Lists\reduce as reduceLists;
 
 /**
  * Make a list of nodes
@@ -109,10 +111,7 @@ function children($element)
  */
 function addChild($element, $child)
 {
-    return consLists(
-        getName($element),
-        consLists($child, children($element)),
-    );
+    return consLists(getName($element), consLists($child, children($element)));
 }
 
 /**

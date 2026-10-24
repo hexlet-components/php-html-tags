@@ -1,20 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Php\Html\Tags\tests;
 
 use Closure;
 use PHPUnit\Framework\TestCase;
 
-use function Php\Html\Tags\HtmlTags\make;
-use function Php\Html\Tags\HtmlTags\append;
-use function Php\Html\Tags\HtmlTags\node;
-use function Php\Html\Tags\HtmlTags\toString;
 use function Php\Html\Tags\HtmlTags\addChild;
-use function Php\Html\Tags\HtmlTags\is;
-use function Php\Html\Tags\HtmlTags\getValue;
-use function Php\Html\Tags\HtmlTags\map;
+use function Php\Html\Tags\HtmlTags\append;
 use function Php\Html\Tags\HtmlTags\filter;
+use function Php\Html\Tags\HtmlTags\getValue;
+use function Php\Html\Tags\HtmlTags\is;
+use function Php\Html\Tags\HtmlTags\make;
+use function Php\Html\Tags\HtmlTags\map;
+use function Php\Html\Tags\HtmlTags\node;
 use function Php\Html\Tags\HtmlTags\reduce;
+use function Php\Html\Tags\HtmlTags\toString;
 
 class HtmlTagsTest extends TestCase
 {
@@ -33,7 +35,7 @@ class HtmlTagsTest extends TestCase
 
     public function testMap()
     {
-        $processedDom = map($this->dom, function ($element) {
+        $processedDom = map($this->dom, static function ($element) {
             if (is('h2', $element)) {
                 return node('h3', getValue($element));
             }
@@ -47,14 +49,14 @@ class HtmlTagsTest extends TestCase
 
     public function testFilter()
     {
-        $processedDom = filter($this->dom, fn($element) => is('h2', $element));
+        $processedDom = filter($this->dom, static fn($element) => is('h2', $element));
         $result = '<h2>hello, world</h2><h2>header2</h2>';
         $this->assertEquals($result, toString($processedDom));
     }
 
     public function testReduce()
     {
-        $count = reduce($this->dom, fn($element, $acc) => $acc + 1, 0);
+        $count = reduce($this->dom, static fn($element, $acc) => $acc + 1, 0);
         $this->assertEquals(3, $count);
     }
 
