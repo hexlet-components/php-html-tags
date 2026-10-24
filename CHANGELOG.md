@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/hexlet-components/php-html-tags/compare/v2.0.1...v2.0.2) (2026-10-24)
+
+
+### Miscellaneous Chores
+
+* **guardrails:** hk, commitlint, typos, rumdl, lychee, betterleaks, osv-scanner ([80ae427](https://github.com/hexlet-components/php-html-tags/commit/80ae4272fb718639bfe50659ab4f11d79f2b64bc))
+
 ## [2.0.1](https://github.com/hexlet-components/php-html-tags/compare/v2.0.0...v2.0.1) (2026-08-18)
 
 
